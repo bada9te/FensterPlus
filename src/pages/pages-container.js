@@ -5,7 +5,7 @@ const Container = props => {
     return (
         <>
             <TopBar/>
-            <div>
+            <div className="">
                 <Outlet/>
             </div>
         </>
