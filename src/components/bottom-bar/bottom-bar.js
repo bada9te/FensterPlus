@@ -12,7 +12,7 @@ const BottomBar = props => {
                     <Row>
 
                         <Col className='p-4'>
-                            <Row className='mb-5'>
+                            <Row className='mb-3'>
                                 <h5 className="fw-bold">UNSERE VORTEILE</h5>
                             </Row>
                             <Row>
@@ -22,7 +22,7 @@ const BottomBar = props => {
                             </Row>
                         </Col>
                         <Col className='p-4'>
-                            <Row className='mb-5'>
+                            <Row className='mb-3'>
                                 <h5 className="fw-bold">NEWSLETTER</h5>
                             </Row>
                             <Row>
@@ -44,7 +44,7 @@ const BottomBar = props => {
                             </Row>
                         </Col>
                         <Col className='p-4'>
-                            <Row className='mb-5'>
+                            <Row className='mb-3'>
                                 <h5 className="fw-bold">KONTAKTDATEN</h5>
                             </Row>
                             <Row>

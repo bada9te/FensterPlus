@@ -1,0 +1,19 @@
+{
+    "data": [
+        {
+            "title": "Partner 1",
+            "description": "Description for Parner 1",
+            "image": "https://glasso-fenster.de/assets/img/clients/sofi.jpg"
+        },
+        {
+            "title": "Partner 2",
+            "description": "Description for Parner 2",
+            "image": "https://glasso-fenster.de/assets/img/clients/lvivsky.jpg"
+        },
+        {
+            "title": "Partner 3",
+            "description": "Description for Parner 3",
+            "image": "https://glasso-fenster.de/assets/img/clients/irpen.jpg"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "data": [
+        { 
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eo_circle_grey_checkmark.svg/2048px-Eo_circle_grey_checkmark.svg.png", 
+            "title": "QUALITÄTSKONTROLLE", 
+            "description": "Jedes Fenster wird ausnahmslos von der technischen Kontrollabteilung am Stand der Qualitätskontrolle überprüft. Qualität ist nicht nur ein Wort!" 
+        },
+
+        { 
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eo_circle_grey_checkmark.svg/2048px-Eo_circle_grey_checkmark.svg.png", 
+            "title": "WIR LIEFERN FENSTER", 
+            "description": "Lieferung an einem vereinbarten Tag und zu einer vereinbarten Zeit in Fahrzeugen mit Schiebemarkise. Die Fenster sind ordentlich und sauber" 
+        },
+
+        { 
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eo_circle_grey_checkmark.svg/2048px-Eo_circle_grey_checkmark.svg.png", 
+            "title": "PROFIS", 
+            "description": "Erfahrenes, qualifiziertes Personal mit langjähriger Erfahrung. Hochrangige Spezialisten! Wir schätzen und respektieren unsere Mitarbeiter!" 
+        },
+
+        { 
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eo_circle_grey_checkmark.svg/2048px-Eo_circle_grey_checkmark.svg.png", 
+            "title": "WIR RATEN!", 
+            "description": "Kundendienstmanager helfen Ihnen bei der Entwicklung, Gestaltung und Ausführung. Persönlicher Manager - für operative Unterstützung." 
+        }
+    ]
+}

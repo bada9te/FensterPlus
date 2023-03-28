@@ -20,7 +20,7 @@ const TopBar = props => {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
                     <NavigationButton to="/" text="HAUPTSIETE"/>
-                    <NavigationButton to="/producte" text="PRODUCTE"/>
+                    <NavigationButton to="/produkte" text="PRODUKTE"/>
                     <NavigationButton to="/vorteil" text="VORTEIL"/>
                     <NavigationButton to="/kunden" text="KUNDEN"/>
                     <NavigationButton to="/kontakte" text="KONTAKTE"/>
