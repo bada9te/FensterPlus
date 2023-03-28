@@ -1,0 +1,107 @@
+{
+    "certificates": {
+        "data": [
+            {
+                "title": "Test title",
+                "image": "https://files.jotform.com/jotformapps/employee-of-the-month-certificate-template-f457f340a8dd4b2abf46f97264584df7.png?v=1679925405"
+            },
+            {
+                "title": "Test title 2",
+                "image": "https://marketplace.canva.com/EAFJXTjgz1M/1/0/1600w/canva-blue-and-yellow-minimalist-employee-of-the-month-certificate-_A_NvKtzEzc.jpg"
+            }
+        ]
+    },
+
+    "notes": {
+        "data": [
+            { 
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eo_circle_grey_checkmark.svg/2048px-Eo_circle_grey_checkmark.svg.png", 
+                "title": "QUALITÄTSKONTROLLE", 
+                "description": "Jedes Fenster wird ausnahmslos von der technischen Kontrollabteilung am Stand der Qualitätskontrolle überprüft. Qualität ist nicht nur ein Wort!" 
+            },
+    
+            { 
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eo_circle_grey_checkmark.svg/2048px-Eo_circle_grey_checkmark.svg.png", 
+                "title": "WIR LIEFERN FENSTER", 
+                "description": "Lieferung an einem vereinbarten Tag und zu einer vereinbarten Zeit in Fahrzeugen mit Schiebemarkise. Die Fenster sind ordentlich und sauber" 
+            },
+    
+            { 
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eo_circle_grey_checkmark.svg/2048px-Eo_circle_grey_checkmark.svg.png", 
+                "title": "PROFIS", 
+                "description": "Erfahrenes, qualifiziertes Personal mit langjähriger Erfahrung. Hochrangige Spezialisten! Wir schätzen und respektieren unsere Mitarbeiter!" 
+            },
+    
+            { 
+                "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Eo_circle_grey_checkmark.svg/2048px-Eo_circle_grey_checkmark.svg.png", 
+                "title": "WIR RATEN!", 
+                "description": "Kundendienstmanager helfen Ihnen bei der Entwicklung, Gestaltung und Ausführung. Persönlicher Manager - für operative Unterstützung." 
+            }
+        ]
+    },
+
+    "partners": {
+        "data": [
+            {
+                "title": "Partner 1",
+                "description": "Description for Parner 1",
+                "image": "https://glasso-fenster.de/assets/img/clients/sofi.jpg"
+            },
+            {
+                "title": "Partner 2",
+                "description": "Description for Parner 2",
+                "image": "https://glasso-fenster.de/assets/img/clients/lvivsky.jpg"
+            },
+            {
+                "title": "Partner 3",
+                "description": "Description for Parner 3",
+                "image": "https://glasso-fenster.de/assets/img/clients/irpen.jpg"
+            }
+        ]
+    },
+
+    "products": {
+        "data": [
+            { 
+                "image": "https://glasso-fenster.de/assets/img/portfolio/windows_glasso7s.jpg", 
+                "title": "FENSTER GLASSO 7S EU", 
+                "description": "Ein Fenster mit einem europäischen Sechs-Kammer-Profilsystem - hergestellt in deutscher Qualität. Hohe Qualität und hervorragende Eigenschaften ermöglichen es uns, solche Fenster für die Verglasung von Büros, Wohngebäuden, Wohnungen, öffentlichen und privaten Einrichtungen, Kindergärten und Schulen zu empfehlen, um Ressourcen zu sparen und zu sparen. Ein solches System entspricht vollständig allen modernen Standards und Normen. Die Sechs-Kammer-Glasso 7S-Serie ist die optimale Lösung für Menschen, die Qualität bevorzugen. Die Entwicklung dieses Systems basiert auf hohen Anforderungen an Energieeffizienz, Zuverlässigkeit und Schalldämmung.",
+                "category": "First"
+            },
+            { 
+                "image": "https://glasso-fenster.de/assets/img/portfolio/windows_glasso85premium.jpg", 
+                "title": "FENSTER GLASSO 85 PREMIUM", 
+                "description": "Premium ukrainische Qualität. Das einzigartige Glasso Premium 85-System mit einer Einbautiefe von 85 mm kann in Bezug auf Qualität, Steifigkeit und Stabilität mit den weltweit besten Premium-Profilsystemen mithalten und gleichzeitig einen angemessenen Preis erzielen. Dank drei Dichtungskreisläufen, sieben Kammern im Flügel und Rahmen, einer Außenwanddicke von 2,8 mm, maximaler Energieeinsparung und Funktionalität wird erreicht. Wir empfehlen dieses System ausnahmslos in allen Fällen, wenn es darum geht, die hochwertigsten Materialien mit außergewöhnlichen Eigenschaften und erstklassiger Funktionalität anzuwenden. Ein echtes Premium-Fenster von Glasso ohne Kompromisse.",
+                "category": "Second"
+            },
+            { 
+                "image": "https://glasso-fenster.de/assets/img/portfolio/windows_glasso85premium.jpg", 
+                "title": "FENSTER GLASSO 85 PREMIUM", 
+                "description": "Premium ukrainische Qualität. Das einzigartige Glasso Premium 85-System mit einer Einbautiefe von 85 mm kann in Bezug auf Qualität, Steifigkeit und Stabilität mit den weltweit besten Premium-Profilsystemen mithalten und gleichzeitig einen angemessenen Preis erzielen. Dank drei Dichtungskreisläufen, sieben Kammern im Flügel und Rahmen, einer Außenwanddicke von 2,8 mm, maximaler Energieeinsparung und Funktionalität wird erreicht. Wir empfehlen dieses System ausnahmslos in allen Fällen, wenn es darum geht, die hochwertigsten Materialien mit außergewöhnlichen Eigenschaften und erstklassiger Funktionalität anzuwenden. Ein echtes Premium-Fenster von Glasso ohne Kompromisse.",
+                "category": "Third"
+            }
+        ]
+    },
+
+    "slider": {
+        "data": [
+            {
+                "label": "First slide label",
+                "description": "Nulla vitae elit libero, a pharetra augue mollis interdum.",
+                "image": "https://wooder-group.ru/upload/medialibrary/d86/_-_.jpg"
+            },
+            {
+                "label": "Second slide label",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "image": "https://cdnn11.img.sputnik.by/img/102269/82/1022698203_0:0:2048:1153_1920x0_80_0_0_98dcc39f091aa2ae63f7d48a52e770a6.jpg"
+            },
+            {
+                "label": "Third slide label",
+                "description": "Praesent commodo cursus magna, vel scelerisque nisl consectetur.",
+                "image": "https://frankfurt.apollo.olxcdn.com/v1/files/apf8811qggls1-UZ/image;s=1920x1080"
+            }
+        ]
+    }
+
+    
+}
