@@ -4,12 +4,12 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 
-const ProductList = props => {
-    const [productsData, setProductsData] = useState([]);
+const SlideList = props => {
+    const [sliderData, setSliderData] = useState([]);
 
     const getData = async() => {
-        const result = await axios.get('/get/products');
-        setProductsData(result.data.data);
+        const result = await axios.get('/get/slider');
+        setSliderData(result.data.data);
     }
 
     useEffect(() => {
@@ -18,9 +18,9 @@ const ProductList = props => {
 
     const handleRemove = (e) => {
         const titleToRemove = e.target.getAttribute('name');
-        const newData = productsData.filter((item) => item.title !== titleToRemove)
-        setProductsData(newData);
-        console.log(productsData);
+        const newData = sliderData.filter((item) => item.title !== titleToRemove)
+        setSliderData(newData);
+        console.log(sliderData);
     }
 
 
@@ -29,16 +29,20 @@ const ProductList = props => {
             <Container>
                 <Row>
                     {
-                        productsData.map((item, key) => {
+                        sliderData.length !== 0
+                        ?
+                        sliderData.map((item, key) => {
                             return (
                                 <Col key={key}>
                                     <Card>
                                         <Button title='Remove' variant='danger' name={item.title} onClick={handleRemove}>Remove</Button>
-                                        <ProductItem title={item.title} description={item.description} image={item.preview} key={key}/>
+                                        <ProductItem title={item.title} description={item.description} image={item.file} key={key}/>
                                     </Card>
                                 </Col>
                             );
                         })
+                        :
+                        null
                     }
                 </Row>
             </Container>
@@ -47,4 +51,4 @@ const ProductList = props => {
 }
 
 
-export default ProductList;
+export default SlideList;

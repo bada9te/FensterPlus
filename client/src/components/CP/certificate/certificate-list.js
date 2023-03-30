@@ -1,12 +1,20 @@
-import certificates from '../../../data/certificates.json';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import Certificate from '../../certificate/certificate';
-import { useState } from 'react';
-//import FileSaver from 'file-saver'
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 
 const CertificateList = props => {
-    const [certificatesData, setCertificatesData] = useState(certificates.data);
+    const [certificatesData, setCertificatesData] = useState([]);
+
+    const getData = async() => {
+        const result = await axios.get('/get/certificates');
+        setCertificatesData(result.data.data);
+    }
+
+    useEffect(() => {
+        getData();
+    });
 
     const handleRemove = (e) => {
         const titleToRemove = e.target.getAttribute('name');
@@ -21,16 +29,20 @@ const CertificateList = props => {
             <Container>
                 <Row>
                     {
+                        certificatesData.length !== 0
+                        ?
                         certificatesData.map((item, key) => {
                             return (
                                 <Col key={key}>
                                     <Card>
                                         <Button title='Remove' variant='danger' name={item.title} onClick={handleRemove}>Remove</Button>
-                                        <Certificate title={item.title} image={item.image}/>
+                                        <Certificate title={item.title} image={item.file}/>
                                     </Card>
                                 </Col>
                             );
                         })
+                        :
+                        null
                     }
                 </Row>
             </Container>

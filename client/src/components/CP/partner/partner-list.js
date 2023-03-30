@@ -1,12 +1,20 @@
-import partners from '../../../data/partners.json';
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import Partner from '../../partner/partner';
-import { useState } from 'react';
-//import FileSaver from 'file-saver'
+import { useState, useEffect } from 'react';
+import axios from 'axios';
 
 
 const PartnerList = props => {
-    const [partnersData, setPartnersData] = useState(partners.data);
+    const [partnersData, setPartnersData] = useState([]);
+
+    const getData = async() => {
+        const result = await axios.get('/get/partners');
+        setPartnersData(result.data.data);
+    }
+
+    useEffect(() => {
+        getData();
+    });
 
     const handleRemove = (e) => {
         const titleToRemove = e.target.getAttribute('name');
@@ -21,16 +29,20 @@ const PartnerList = props => {
             <Container>
                 <Row>
                     {
+                        partnersData.length !== 0 
+                        ?
                         partnersData.map((item, key) => {
                             return (
                                 <Col key={key}>
                                     <Card>
                                         <Button title='Remove' variant='danger' name={item.title} onClick={handleRemove}>Remove</Button>
-                                        <Partner title={item.title} description={item.description} image={item.image} key={key}/>
+                                        <Partner title={item.title} description={item.description} image={item.file} key={key}/>
                                     </Card>
                                 </Col>
                             );
                         })
+                        :
+                        null
                     }
                 </Row>
             </Container>

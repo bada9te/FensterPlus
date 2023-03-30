@@ -3,6 +3,7 @@ import CertificateController from '../../components/CP/certificate/certificate-c
 import NoteController from '../../components/CP/notes/note-controller';
 import PartnerController from '../../components/CP/partner/partner-controller';
 import ProductController from '../../components/CP/product/product-controller';
+import SliderController from '../../components/CP/slide/slide-controller';
 
 
 const ControlPanel = props => {
@@ -25,6 +26,9 @@ const ControlPanel = props => {
                     </Tab>
                     <Tab eventKey="products" title="Products">
                         <ProductController/>
+                    </Tab>
+                    <Tab eventKey="slider" title="Slider">
+                        <SliderController/>
                     </Tab>
                 </Tabs>
             </Container>
