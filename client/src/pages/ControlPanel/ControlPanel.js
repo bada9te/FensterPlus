@@ -1,14 +1,32 @@
-import { Container, Row, Card } from 'react-bootstrap';
+import { Container, Tabs, Tab } from 'react-bootstrap';
 import CertificateController from '../../components/CP/certificate/certificate-controller';
+import NoteController from '../../components/CP/notes/note-controller';
+import PartnerController from '../../components/CP/partner/partner-controller';
+import ProductController from '../../components/CP/product/product-controller';
 
 
 const ControlPanel = props => {
     return (
         <>
             <Container>
-                <Row>
-                    <CertificateController/>
-                </Row>
+                <Tabs
+                    defaultActiveKey="certificates"
+                    id="uncontrolled-tab-example"
+                    className="mb-3"
+                >
+                    <Tab eventKey="certificates" title="Certificates">
+                        <CertificateController/>
+                    </Tab>
+                    <Tab eventKey="notes" title="Notes">
+                        <NoteController/>
+                    </Tab>
+                    <Tab eventKey="partners" title="Partners">
+                        <PartnerController/>
+                    </Tab>
+                    <Tab eventKey="products" title="Products">
+                        <ProductController/>
+                    </Tab>
+                </Tabs>
             </Container>
         </>
     );

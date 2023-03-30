@@ -1,0 +1,22 @@
+{
+  "name": "fensterplus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "npm run start --prefix server",
+    "client": "npm run start --prefix client",
+    "exec": "npm run build --prefix client&& npm run start --prefix server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Godda9/FensterPlus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Godda9/FensterPlus/issues"
+  },
+  "homepage": "https://github.com/Godda9/FensterPlus#readme"
+}
