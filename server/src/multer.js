@@ -102,6 +102,7 @@ const initMulter = (app) => {
                 products.data.push({
                     title: req.body.title,
                     description: req.body.description,
+                    category: req.body.category,
                     preview: file1[0].filename,
                     details: file2[0].filename,
                 });

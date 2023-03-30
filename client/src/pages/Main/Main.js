@@ -17,7 +17,7 @@ const Main = props => {
             
             <Container className='py-5'>
                 <Row>
-                    <h2 className="text-center">Firma FensterPlus - 19 Jahre Erfahrung</h2>
+                    <h2 className="text-center">Firma FensterPlus - 10 Jahre Erfahrung</h2>
                 </Row>
 
                 <Row>

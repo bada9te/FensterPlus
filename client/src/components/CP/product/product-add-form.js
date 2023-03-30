@@ -11,6 +11,7 @@ const ProductAddForm = props => {
         const formData = new FormData();
         formData.append('title', data.ProductTitle);
         formData.append('description', data.ProductDescription);
+        formData.append('category', data.Category);
         formData.append('file1', data.FilePreview[0]);
         formData.append('file2', data.FileDetails[0]);
         formData.append('what', 'product');
@@ -48,6 +49,24 @@ const ProductAddForm = props => {
                 
                 <Form.Text className="text-muted">
                     {errors.ProductDescription && <span className="form-text text-danger">This field is required</span>}
+                </Form.Text>
+            </Form.Group>
+
+
+            <Form.Group className="mb-3" controlId="formBasicTitle">
+                <Form.Label>Product description</Form.Label>
+                <Form.Select 
+                    {...register("Category", {
+                        required: true,
+                    })} 
+                >
+                    <option>Category 1</option>
+                    <option>Category 2</option>
+                    <option>Category 3</option>
+                </Form.Select>
+                
+                <Form.Text className="text-muted">
+                    {errors.Category && <span className="form-text text-danger">This field is required</span>}
                 </Form.Text>
             </Form.Group>
 
