@@ -2,6 +2,7 @@ import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import ProductItem from '../../product-item/product-item';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import SlidePreview from './slide-preview';
 
 
 const SlideList = props => {
@@ -34,9 +35,9 @@ const SlideList = props => {
                         sliderData.map((item, key) => {
                             return (
                                 <Col key={key}>
-                                    <Card>
+                                    <Card style={{ width: '18rem' }}>
                                         <Button title='Remove' variant='danger' name={item.title} onClick={handleRemove}>Remove</Button>
-                                        <ProductItem title={item.title} description={item.description} image={item.file} key={key}/>
+                                        <SlidePreview title={item.title} description={item.description} file={item.file}/>
                                     </Card>
                                 </Col>
                             );

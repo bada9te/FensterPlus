@@ -34,7 +34,7 @@ const PartnerList = props => {
                         partnersData.map((item, key) => {
                             return (
                                 <Col key={key}>
-                                    <Card>
+                                    <Card style={{ width: '18rem' }}>
                                         <Button title='Remove' variant='danger' name={item.title} onClick={handleRemove}>Remove</Button>
                                         <Partner title={item.title} description={item.description} image={item.file} key={key}/>
                                     </Card>
