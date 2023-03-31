@@ -1,8 +1,9 @@
 
 import { Col, Card, ButtonGroup, Button } from "react-bootstrap";
+import * as Icon from 'react-bootstrap-icons';
 
 const Partner = props => {
-    const { title, description, image } = props;
+    const { title, description, image, social } = props;
 
     return (
         <Col className='d-flex justify-content-center'>
@@ -20,12 +21,11 @@ const Partner = props => {
                     <Card.Title className='text-center'>{title}</Card.Title>
                     <Card.Text className='text-center fst-italic'>{description}</Card.Text>
                     <div className='d-flex justify-content-center'>
-                    <ButtonGroup aria-label="Basic example">
-                        <Button variant="primary">s1</Button>
-                        <Button variant="secondary">s2</Button>
-                        <Button variant="dark">s3</Button>
-                        <Button variant="light">s4</Button>
-                    </ButtonGroup>
+                        <ButtonGroup aria-label="Basic example">
+                            { social?.instagram ? <Button className="d-flex align-items-center" variant="danger" href={social.instagram} target="_blank"><Icon.Instagram/></Button> : null }
+                            { social?.facebook ? <Button className="d-flex align-items-center" variant="primary" href={social.facebook} target="_blank"><Icon.Facebook/></Button> : null }
+                            { social?.twitter ? <Button className="d-flex align-items-center" variant="dark" href={social.twitter} target="_blank"><Icon.Twitter/></Button> : null }
+                        </ButtonGroup>
                     </div>
                 </Card.Body>
             </Card>

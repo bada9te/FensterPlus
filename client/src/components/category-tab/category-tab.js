@@ -25,11 +25,11 @@ const CategoryTab = props => {
                     productsData.map((item, key) => {
                         if (category.toLowerCase() === "all") {
                             return ( 
-                                <ProductItem image={item.preview} title={item.title} description={item.description} key={key} />
+                                <ProductItem preview={item.preview} details={item.details} title={item.title} description={item.description} key={key} />
                             );
                         } else if (item.category.toLowerCase() === category.toLowerCase()) {
                             return ( 
-                                <ProductItem image={item.preview} title={item.title} description={item.description} key={key} />
+                                <ProductItem preview={item.preview} details={item.details} title={item.title} description={item.description} key={key} />
                             );
                         } else {
                             return null;

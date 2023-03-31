@@ -1,16 +1,27 @@
 import { Container, Card, Row, Col, InputGroup, Form, Button } from 'react-bootstrap';
+import { useForm } from 'react-hook-form'; 
 import * as Icon from 'react-bootstrap-icons';
+import axios from 'axios';
 
 
 const BottomBar = props => {
-    const variant = "primary";
+    const { register, handleSubmit, formState: { errors } } = useForm();
+
+    // form submit
+    const onSubmit = async(data) => {
+        const result = await axios.post('/get/add-subscriber', { subscriberEmail: data.Email });
+        if (result.data.done) {
+            alert("Subscribed")
+        } else {
+            alert("Error")
+        }
+    }
 
     return (
         <Card className="w-100 rounded-0" style={{ backgroundColor: 'rgb(46,49,146)', color: 'white' }}>
             <Card.Body>
                 <Container>
                     <Row>
-
                         <Col className='p-4'>
                             <Row className='mb-3'>
                                 <h5 className="fw-bold">UNSERE VORTEILE</h5>
@@ -31,16 +42,25 @@ const BottomBar = props => {
                                 </p>
                             </Row>
                             <Row>
-                                <InputGroup className="mb-3" size='sm'>
-                                    <Form.Control
-                                        placeholder="Email"
-                                        aria-label="Email"
-                                        aria-describedby="basic-addon2"
-                                    />
-                                    <Button variant="primary" id="button-addon2">
-                                        Subscribe
-                                    </Button>
-                                </InputGroup>
+                                <form onSubmit={handleSubmit(onSubmit)}>
+                                    <InputGroup className="mb-3" size='sm'>
+                                        <Form.Control
+                                            type='email'
+                                            placeholder="Email"
+                                            aria-label="Email"
+                                            aria-describedby="basic-addon2"
+                                            {...register("Email", {
+                                                required: true,
+                                            })} 
+                                        />
+                                        <Button type='submit' variant="primary" id="button-addon2">
+                                            Subscribe
+                                        </Button>
+                                        <Form.Text className="text-muted">
+                                            {errors.Email && <span className="form-text text-danger">This field is required</span>}
+                                        </Form.Text>
+                                    </InputGroup>
+                                </form>
                             </Row>
                         </Col>
                         <Col className='p-4'>

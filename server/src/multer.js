@@ -57,6 +57,11 @@ const initMulter = (app) => {
                 partners.data.push({
                     title: req.body.title,
                     description: req.body.description,
+                    social: {
+                        instagram: req.body.instagram,
+                        facebook: req.body.facebook,
+                        twitter: req.body.twitter,
+                    },
                     file: file.filename,
                 });
                 writeJson(path.join(__dirname, '..', 'contentData', 'partners.json'), partners);

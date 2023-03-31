@@ -39,7 +39,7 @@ const PartnerList = props => {
                                 <Col key={key}>
                                     <Card style={{ width: '18rem' }}>
                                         <Button title='Remove' variant='danger' name={item.title} onClick={handleRemove}>Remove</Button>
-                                        <Partner title={item.title} description={item.description} image={item.file} key={key}/>
+                                        <Partner title={item.title} description={item.description} image={item.file} social={item.social} key={key}/>
                                     </Card>
                                 </Col>
                             );

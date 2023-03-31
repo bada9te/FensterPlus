@@ -11,6 +11,9 @@ const PartnerAddForm = props => {
         const formData = new FormData();
         formData.append('title', data.PartnerTitle);
         formData.append('description', data.PartnerDescription);
+        formData.append('instagram', data.Instagram);
+        formData.append('facebook', data.Facebook);
+        formData.append('twitter', data.Twitter);
         formData.append('file', data.File[0]);
         formData.append('what', 'partner');
         
@@ -50,6 +53,18 @@ const PartnerAddForm = props => {
                 </Form.Text>
             </Form.Group>
 
+            <Form.Group>
+                <Form.Label>Facebook</Form.Label>
+                <Form.Control type="text" {...register("Facebook")} />
+            </Form.Group>
+            <Form.Group>
+                <Form.Label>Instagram</Form.Label>
+                <Form.Control type="text" {...register("Instagram")} />
+            </Form.Group>
+            <Form.Group>
+                <Form.Label>Twitter</Form.Label>
+                <Form.Control type="text" {...register("Twitter")} />
+            </Form.Group>
 
             <Form.Group>
                 <Form.Label>Partner image file</Form.Label>

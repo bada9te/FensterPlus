@@ -37,7 +37,7 @@ const ProductList = props => {
                                 <Col key={key}>
                                     <Card style={{ width: '18rem' }}>
                                         <Button title='Remove' variant='danger' name={item.title} onClick={handleRemove}>Remove</Button>
-                                        <ProductItem title={item.title} description={item.description} image={item.preview} key={key}/>
+                                        <ProductItem title={item.title} description={item.description} preview={item.preview} details={item.details} key={key}/>
                                     </Card>
                                 </Col>
                             );

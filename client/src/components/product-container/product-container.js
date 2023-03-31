@@ -23,7 +23,8 @@ const ProductContainer = props => {
                 productsData.map((item, key) => {
                     return (
                         <ProductItem 
-                            image={item.preview}
+                            preview={item.preview}
+                            details={item.details}
                             title={item.title}
                             description={item.description}
                             key={key}

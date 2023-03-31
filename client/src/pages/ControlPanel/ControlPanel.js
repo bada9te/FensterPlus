@@ -1,5 +1,6 @@
 import { Container, Tabs, Tab } from 'react-bootstrap';
 import CertificateController from '../../components/CP/certificate/certificate-controller';
+import MailController from '../../components/CP/mailer/mail-controller';
 import NoteController from '../../components/CP/notes/note-controller';
 import PartnerController from '../../components/CP/partner/partner-controller';
 import ProductController from '../../components/CP/product/product-controller';
@@ -31,7 +32,7 @@ const ControlPanel = props => {
                         <SliderController/>
                     </Tab>
                     <Tab eventKey="mailer" title="Mailer">
-                        email
+                        <MailController/>
                     </Tab>
                 </Tabs>
             </Container>

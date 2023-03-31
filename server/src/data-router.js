@@ -10,6 +10,7 @@ const notes = require('../contentData/notes.json');
 const partners = require('../contentData/partners.json');
 const products = require('../contentData/products.json');
 const slider = require('../contentData/slider.json');
+const subscribers = require('../contentData/subscribers.json');
 
 
 // data router
@@ -133,6 +134,33 @@ dataRouter.post('/rm-slider', (req, res) => {
         });
     }
 });
+
+
+
+// subscribers
+dataRouter.get('/subscribers', (req, res) => {
+    return res.status(201).json({
+        data: subscribers.data,
+    });
+});
+dataRouter.post('/add-subscriber', (req, res) => {
+    try {
+        const subscriberEmail = req.body.subscriberEmail;
+        subscribers.data.push({
+            email: subscriberEmail,
+        });
+        writeJson(path.join(__dirname, '..', 'contentData', 'subscribers.json'), subscribers);
+        
+        return res.status(201).json({
+            done: true,
+        });
+    } catch (error) {
+        return res.status(400).json({
+            done: false,
+            error: error,
+        });
+    }
+})
 
 
 
