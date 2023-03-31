@@ -16,11 +16,14 @@ const PartnerList = props => {
         getData();
     });
 
-    const handleRemove = (e) => {
+    const handleRemove = async(e) => {
         const titleToRemove = e.target.getAttribute('name');
         const newData = partnersData.filter((item) => item.title !== titleToRemove)
         setPartnersData(newData);
-        console.log(partnersData);
+        const result = await axios.post('/get/rm-partners', { titleToRemove: titleToRemove });
+        if (result.data.done) {
+            alert("Removed")
+        }
     }
 
 

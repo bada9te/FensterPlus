@@ -48,9 +48,9 @@ const BottomBar = props => {
                                 <h5 className="fw-bold">KONTAKTDATEN</h5>
                             </Row>
                             <Row>
-                                <p className='fw-normal'><Icon.GeoAltFill /> Super puper adress on Earth</p>
-                                <p className='fw-normal'><Icon.PhoneFill /> Telefon: +38 000 00 00 00</p>
-                                <p className='fw-normal'><Icon.EnvelopeFill /> Email: xxxxxx@gmail.com</p>
+                                <p className='fw-normal'><Icon.GeoAltFill /> Europasrt.27 72510 Stetten a.k.M</p>
+                                <p className='fw-normal'><Icon.PhoneFill /> +4901735655122</p>
+                                <p className='fw-normal'><Icon.EnvelopeFill /> info@fensterplus.com</p>
                             </Row>
                         </Col>
                     </Row>

@@ -1,12 +1,8 @@
 import Slider from '../../components/slider/slider';
 import { Container, Row } from 'react-bootstrap';
-import DetailsNote from '../../components/details-note/details-note';
-import ProductItem from '../../components/product-item/product-item';
 import BottomBar from '../../components/bottom-bar/bottom-bar';
-
-// data
-import productsFile from '../../data/products.json';
 import DetailsNoteContainer from '../../components/details-note-container/details-note-container';
+import ProductContainer from '../../components/product-container/product-container';
 
 
 
@@ -21,7 +17,8 @@ const Main = props => {
                 </Row>
 
                 <Row>
-                    <p className="fst-italic text-center">in der Herstellung von durchscheinenden Strukturen</p>
+                    <p className="fst-italic text-center">in der Herstellung von Fenster- und Türobjekte!</p>
+                    <p className="text-center">Seit mehr als 10 Jahren montieren und reparieren wir Fenster, Türen, Rollläden, Jalousien.</p>
                 </Row>
 
                 <Row className='my-3 mb-5'>
@@ -33,18 +30,7 @@ const Main = props => {
                 </Row>
 
                 <Row className='my-3 mb-5'>
-                    {
-                        productsFile.data.map((item, key) => {
-                            return (
-                                <ProductItem 
-                                    image={item.image}
-                                    title={item.title}
-                                    description={item.description}
-                                    key={key}
-                                />
-                            );
-                        })
-                    }
+                    <ProductContainer/>
                 </Row>
             </Container>
             

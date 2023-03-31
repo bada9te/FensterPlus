@@ -18,12 +18,16 @@ const Kontakte = props => {
                 <hr/>
 
                 <Row>
+                    <h3 className="fw-bold">ARBEITSPLAN 8.00-18.00</h3>
+                </Row>
+
+                <Row>
                     <Col>
                         <Row className="p-3">
-                            <ContactPerson title="DEUTSCHLAND" name="Name Surname" phone="+00 000 000 00 0" email="xxxxx@gmail.com"/>
+                            <ContactPerson title="Leiter der Firma" name="Vitaly Britner" phone="+4901735655122" email="info@fensterplus.com"/>
                         </Row>
                         <Row className="p-3">
-                            <ContactPerson title="UKRAINE" name="Name Surname" phone="+00 000 000 00 0" email="xxxxx@gmail.com"/>
+                            <ContactPerson title="Stellvertretender Leiter" name="Alexey Krol" phone="+4915118473827" email="a.kroll@ukr.net"/>
                         </Row>
                     </Col>
 
@@ -40,10 +44,8 @@ const Kontakte = props => {
                             <Card className="p-0">
                                 <Card.Header as="h5">DIE ADRESSE</Card.Header>
                                 <Card.Body>
-                                    <Card.Text>Kiew, Akademiker Krimskogo 4a. Ukraine</Card.Text>
-                                    <Card.Text>Telefon: +38 067 502 19 90</Card.Text>
-                                    <Card.Text>in Deutschland: +49 151 506 13 12 6</Card.Text>
-                                    <Card.Text>verkaufde@glasso.ua</Card.Text>
+                                    <Card.Text>Europasrt.27 72510 Stetten a.k.M</Card.Text>
+                                    <Card.Text>Telefon: +4901735655122</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Row>

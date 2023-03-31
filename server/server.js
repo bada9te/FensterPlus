@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 8000;
 // multer (file upload)
 initMulter(app);
 
-
+// json
+app.use(express.json());
 
 // data routes
 app.use('/get', require('./src/data-router'));

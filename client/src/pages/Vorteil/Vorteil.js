@@ -23,7 +23,7 @@ const Vorteil = props => {
                 </Row>
 
                 <Row className='p-5'>
-                    <h3 className="text-center">VORTEILE EINER PARTNERSCHAFT MIT GLASSO FÜR KUNDEN</h3>
+                    <h3 className="text-center">HIER SIND UNSERE STÄRKEN:</h3>
                 </Row>
                 <Row>
                     <DetailsNoteContainer/>

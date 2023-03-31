@@ -16,11 +16,14 @@ const NoteList = props => {
         getData();
     });
 
-    const handleRemove = (e) => {
+    const handleRemove = async(e) => {
         const titleToRemove = e.target.getAttribute('name');
         const newData = notesData.filter((item) => item.title !== titleToRemove)
         setNotesData(newData);
-        console.log(notesData);
+        const result = await axios.post('/get/rm-notes', { titleToRemove: titleToRemove });
+        if (result.data.done) {
+            alert("Removed")
+        }
     }
 
 

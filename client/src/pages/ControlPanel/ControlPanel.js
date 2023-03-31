@@ -30,6 +30,9 @@ const ControlPanel = props => {
                     <Tab eventKey="slider" title="Slider">
                         <SliderController/>
                     </Tab>
+                    <Tab eventKey="mailer" title="Mailer">
+                        email
+                    </Tab>
                 </Tabs>
             </Container>
         </>

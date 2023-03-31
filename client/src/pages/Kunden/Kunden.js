@@ -26,20 +26,8 @@ const Kunden = props => {
 
                 <Row className="pt-5">
                     <p>
-                        <h5 className="fw-bold">KURZ ÜBER UNS</h5>
-                        text ever since the 1500shas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </Row>
-                <Row className="pt-3">
-                    <p>
-                        <h5 className="fw-bold">UNSERE PARTNER</h5>
-                        text ever since the 1500shas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                </Row>
-                <Row className="pt-3">
-                    <p>
-                        <h5 className="fw-bold">WARUM WÄHLEN SIE UNS?</h5>
-                        text ever since the 1500shas survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <h5 className="fw-bold">EIN BISSCHEN ÜBER UNS</h5>
+                        FensterPlus ist seit 10 Jahren auf dem baden-württembergischen Markt und hat sich in dieser Zeit einen guten Ruf und Erfahrung als zuverlässiges Unternehmen in der Montage von Fenster- und Türenprodukten erarbeitet. Vertrauen Sie uns, denn wir respektieren und schätzen jeden Kunden
                     </p>
                 </Row>
             </Container>

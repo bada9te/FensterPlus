@@ -22,12 +22,11 @@ dataRouter.get('/certificates', (req, res) => {
         data: certificates.data,
     });
 });
-dataRouter.post('/certificates', (req, res) => {
+dataRouter.post('/rm-certificates', (req, res) => {
     try {
-        const titleToRemove = req.titleToRemove;
+        const titleToRemove = req.body.titleToRemove;
         certificates.data = certificates.data.filter((item) => item.title !== titleToRemove);
         writeJson(path.join(__dirname, '..', 'contentData', 'certificates.json'), certificates);
-
         return res.status(201).json({
             done: true,
         });
@@ -46,9 +45,9 @@ dataRouter.get('/notes', (req, res) => {
         data: notes.data,
     });
 });
-dataRouter.post('/notes', (req, res) => {
+dataRouter.post('/rm-notes', (req, res) => {
     try {
-        const titleToRemove = req.titleToRemove;
+        const titleToRemove = req.body.titleToRemove;
         notes.data = notes.data.filter((item) => item.title !== titleToRemove);
         writeJson(path.join(__dirname, '..', 'contentData', 'notes.json'), notes);
 
@@ -70,9 +69,9 @@ dataRouter.get('/partners', (req, res) => {
         data: partners.data,
     });
 });
-dataRouter.post('/partners', (req, res) => {
+dataRouter.post('/rm-partners', (req, res) => {
     try {
-        const titleToRemove = req.titleToRemove;
+        const titleToRemove = req.body.titleToRemove;
         partners.data = partners.data.filter((item) => item.title !== titleToRemove);
         writeJson(path.join(__dirname, '..', 'contentData', 'partners.json'), partners);
 
@@ -94,9 +93,9 @@ dataRouter.get('/products', (req, res) => {
         data: products.data,
     });
 });
-dataRouter.post('/products', (req, res) => {
+dataRouter.post('/rm-products', (req, res) => {
     try {
-        const titleToRemove = req.titleToRemove;
+        const titleToRemove = req.body.titleToRemove;
         products.data = products.data.filter((item) => item.title !== titleToRemove);
         writeJson(path.join(__dirname, '..', 'contentData', 'products.json'), products);
 
@@ -118,9 +117,9 @@ dataRouter.get('/slider', (req, res) => {
         data: slider.data,
     });
 });
-dataRouter.post('/slider', (req, res) => {
+dataRouter.post('/rm-slider', (req, res) => {
     try {
-        const titleToRemove = req.titleToRemove;
+        const titleToRemove = req.body.titleToRemove;
         slider.data = slider.data.filter((item) => item.title !== titleToRemove);
         writeJson(path.join(__dirname, '..', 'contentData', 'slider.json'), slider);
 

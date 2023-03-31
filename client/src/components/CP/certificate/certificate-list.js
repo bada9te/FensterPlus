@@ -16,11 +16,14 @@ const CertificateList = props => {
         getData();
     });
 
-    const handleRemove = (e) => {
+    const handleRemove = async(e) => {
         const titleToRemove = e.target.getAttribute('name');
         const newData = certificatesData.filter((item) => item.title !== titleToRemove)
         setCertificatesData(newData);
-        console.log(certificatesData);
+        const result = await axios.post('/get/rm-certificates', { titleToRemove: titleToRemove });
+        if (result.data.done) {
+            alert("Removed")
+        }
     }
 
 

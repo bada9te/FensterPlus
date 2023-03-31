@@ -17,11 +17,14 @@ const SlideList = props => {
         getData();
     });
 
-    const handleRemove = (e) => {
+    const handleRemove = async(e) => {
         const titleToRemove = e.target.getAttribute('name');
         const newData = sliderData.filter((item) => item.title !== titleToRemove)
         setSliderData(newData);
-        console.log(sliderData);
+        const result = await axios.post('/get/rm-slider', { titleToRemove: titleToRemove });
+        if (result.data.done) {
+            alert("Removed")
+        }
     }
 
 

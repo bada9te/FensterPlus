@@ -1,16 +1,28 @@
 import Certificate from '../certificate/certificate';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
-// data
-import certificatesFile from '../../data/certificates.json';
 
 
 const CertificatesContainer = props => {
+    const [certificatesData, setCertificatesData] = useState([]);
+
+    const getData = async() => {
+        const result = await axios.get('/get/certificates');
+        setCertificatesData(result.data.data);
+    }
+
+    useEffect(() => {
+        getData();
+    });
+
+
     return (
         <>
             {
-                certificatesFile.data.map((item, key) => {
+                certificatesData.map((item, key) => {
                     return (
-                        <Certificate title={item.title} image={item.image} key={key} />
+                        <Certificate title={item.title} image={item.file} key={key} />
                     );
                 })
             }

@@ -16,11 +16,14 @@ const ProductList = props => {
         getData();
     });
 
-    const handleRemove = (e) => {
+    const handleRemove = async(e) => {
         const titleToRemove = e.target.getAttribute('name');
         const newData = productsData.filter((item) => item.title !== titleToRemove)
         setProductsData(newData);
-        console.log(productsData);
+        const result = await axios.post('/get/rm-products', { titleToRemove: titleToRemove });
+        if (result.data.done) {
+            alert("Removed")
+        }
     }
 
 
