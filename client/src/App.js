@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Main, Produkte, Container, Vorteil, Kunden, Kontakte } from './pages/pages';
+import { Main, Produkte, Container, Vorteil, Kunden, Kontakte, ControlPanel } from './pages/pages';
 
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <>
       <Router>
         <Routes>
+          <Route path='/admin'       element={<ControlPanel/>}/>
           <Route path='/'             element={<Container/>}>
             <Route path='/'           element={<Main/>}/>
             <Route path='/produkte'   element={<Produkte/>}/>

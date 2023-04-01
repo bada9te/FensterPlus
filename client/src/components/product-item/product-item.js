@@ -2,6 +2,8 @@ import { Card, Button, Col, ButtonGroup, Modal } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import { saveAs } from 'file-saver';
 import { useState } from 'react';
+import ReactImageMagnify from 'react-image-magnify';
+
 
 const ProductItem = props => {
     const { title, description, preview, details } = props;
@@ -34,13 +36,13 @@ const ProductItem = props => {
                     <Card.Body>
                         <Card.Title className='text-center'>{title}</Card.Title>
                         <Card.Text className='text-center'>{description}</Card.Text>
-                        <div className='d-flex justify-content-center'>
+                    </Card.Body>
+                    <div className='d-flex justify-content-center mb-3'>
                         <ButtonGroup aria-label="Basic example">
                             <Button className='d-flex align-items-center' variant="primary" onClick={handleShow}><Icon.EyeFill/></Button>
                             <Button className='d-flex align-items-center' variant="secondary" onClick={() => handleDownload(details)}><Icon.Download/></Button>
                         </ButtonGroup>
-                        </div>
-                    </Card.Body>
+                    </div>
                 </Card>
             </Col>
             
@@ -54,7 +56,7 @@ const ProductItem = props => {
                         src={details} 
                         width='100%'
                         height='100%'
-                        style={{objectFit: 'contain'}} 
+                        
                     />
                 </Modal.Body>
             </Modal>   

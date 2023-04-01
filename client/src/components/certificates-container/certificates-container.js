@@ -4,7 +4,7 @@ import certificates from '../../data/certificates';
 
 
 const CertificatesContainer = props => {
-    
+
     return (
         <>
             {

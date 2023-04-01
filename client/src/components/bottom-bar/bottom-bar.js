@@ -9,7 +9,7 @@ const BottomBar = props => {
 
     // form submit
     const onSubmit = async(data) => {
-        const result = await axios.post('/get/add-subscriber', { subscriberEmail: data.Email });
+        const result = await axios.post('./server.php', { subscriberEmail: data.Email });
         if (result.data.done) {
             alert("Subscribed")
         } else {
