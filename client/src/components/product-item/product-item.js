@@ -16,6 +16,7 @@ const ProductItem = props => {
         saveAs(img, `${title}.jpg`)
     }
 
+    
     return (
         <>
             <Col className='d-flex justify-content-center'>
@@ -25,8 +26,9 @@ const ProductItem = props => {
                             className='rounded mt-3' 
                             alt='note-img'
                             src={preview} 
-                            width="200px" 
-                            height="260px" 
+                            width='100%'
+                            height='100%'
+                            style={{objectFit: 'contain'}}  
                         />
                     </div>
                     <Card.Body>

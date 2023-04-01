@@ -13,8 +13,9 @@ const Partner = props => {
                         className='rounded mt-3' 
                         alt='note-img'
                         src={image} 
-                        width="260px" 
-                        height="200px" 
+                        width='100%'
+                        height='100%'
+                        style={{objectFit: 'contain'}}  
                     />
                 </div>
                 <Card.Body>

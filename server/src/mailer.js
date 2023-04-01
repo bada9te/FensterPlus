@@ -2,11 +2,11 @@ const nodeMailer = require('nodemailer');
 
 
 const transporter = nodeMailer.createTransport({
-    host: '',
+    host: 'smtp.strato.de',
     port: 465,
     secure: true,
     auth: {
-        user: '',
+        user: 'info@fensterplus.com',
         pass: '',
     },
 });

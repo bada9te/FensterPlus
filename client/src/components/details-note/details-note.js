@@ -20,7 +20,7 @@ const DetailsNote = props => {
                     <Card.Title className='text-center'>{title}</Card.Title>
                     <Card.Text className='text-center'>{description}</Card.Text>
                     <div className='d-flex justify-content-center'>
-                        { button ? <Button variant="primary">Details</Button> : null }
+                        { button ? <Button variant="primary" href='/vorteil'>Details</Button> : null }
                     </div>
                 </Card.Body>
             </Card>
