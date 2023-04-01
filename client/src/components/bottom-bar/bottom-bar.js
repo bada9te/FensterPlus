@@ -24,12 +24,22 @@ const BottomBar = props => {
                     <Row>
                         <Col className='p-4'>
                             <Row className='mb-3'>
-                                <h5 className="fw-bold">UNSERE VORTEILE</h5>
+                                <h5 className="fw-bold">KORRESPONDENZADRESSE</h5>
                             </Row>
                             <Row>
-                                <p className='fw-normal'>
-                                    GLASSO ist führend auf dem ukrainischen Markt für die Herstellung und Installation von Metall-Kunststoff-Fenstern, Balkonblöcken und Türen. Aluminiumstrukturen
-                                </p>
+                                <p className='fw-normal'><Icon.GeoAltFill /> Europasrt.27 72510 Stetten a.k.M</p>
+                                <p className='fw-normal'><Icon.PhoneFill /> +49 017 35655122</p>
+                                <p className='fw-normal'><Icon.EnvelopeFill /> info@fensterplus.com</p>
+                            </Row>
+                        </Col>
+                        <Col className='p-4'>
+                            <Row className='mb-3'>
+                                <h5 className="fw-bold">AUSSTELLUNGSRAUM</h5>
+                            </Row>
+                            <Row>
+                                <p className='fw-normal'><Icon.GeoAltFill /> Hauptstraße //////</p>
+                                <p className='fw-normal'><Icon.PhoneFill /> +49 151 18473827</p>
+                                <p className='fw-normal'><Icon.EnvelopeFill /> info@fensterplus.com</p>
                             </Row>
                         </Col>
                         <Col className='p-4'>
@@ -61,16 +71,6 @@ const BottomBar = props => {
                                         </Form.Text>
                                     </InputGroup>
                                 </form>
-                            </Row>
-                        </Col>
-                        <Col className='p-4'>
-                            <Row className='mb-3'>
-                                <h5 className="fw-bold">KONTAKTDATEN</h5>
-                            </Row>
-                            <Row>
-                                <p className='fw-normal'><Icon.GeoAltFill /> Europasrt.27 72510 Stetten a.k.M</p>
-                                <p className='fw-normal'><Icon.PhoneFill /> +4901735655122</p>
-                                <p className='fw-normal'><Icon.EnvelopeFill /> info@fensterplus.com</p>
                             </Row>
                         </Col>
                     </Row>

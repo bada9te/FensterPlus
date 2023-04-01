@@ -19,10 +19,10 @@ const DetailsNote = props => {
                 <Card.Body>
                     <Card.Title className='text-center'>{title}</Card.Title>
                     <Card.Text className='text-center'>{description}</Card.Text>
-                    <div className='d-flex justify-content-center'>
-                        { button ? <Button variant="primary" href='/vorteil'>Details</Button> : null }
-                    </div>
                 </Card.Body>
+                <div className='d-flex justify-content-center pb-3'>
+                    { button ? <Button variant="primary" href='/vorteil'>Details</Button> : null }
+                </div>
             </Card>
         </Col>
     );

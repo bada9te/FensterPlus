@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 
 const Certificate = props => {
-    const { image, title } = props;
+    const { images, title } = props;
 
     const [show, setShow] = useState(false);
 
@@ -13,8 +13,10 @@ const Certificate = props => {
         setShow(true);
     }
 
-    const handleDownload = (img) => {
-        saveAs(img, `${title}.jpg`)
+    const handleDownload = (imges) => {
+        images.map(item => {
+            return saveAs(item, `${item}.jpg`)
+        });
     }
 
     return (
@@ -25,7 +27,7 @@ const Certificate = props => {
                         <img variant="top"
                             className='rounded mt-3' 
                             alt='note-img'
-                            src={image} 
+                            src={images[0]} 
                             width='100%'
                             height='100%'
                             style={{objectFit: 'contain'}} 
@@ -33,13 +35,13 @@ const Certificate = props => {
                     </div>
                     <Card.Body>
                         <Card.Title className='text-center'>{title}</Card.Title>
-                        <div className='d-flex justify-content-center'>
-                            <ButtonGroup aria-label="Basic example">
-                                <Button className='d-flex align-items-center' variant="primary" onClick={handleShow}><Icon.EyeFill/></Button>
-                                <Button className='d-flex align-items-center' variant="secondary" onClick={() => handleDownload(image)}><Icon.Download/></Button>
-                            </ButtonGroup>
-                        </div>
                     </Card.Body>
+                    <div className='d-flex justify-content-center pb-3'>
+                        <ButtonGroup aria-label="Basic example">
+                            <Button className='d-flex align-items-center' variant="primary" onClick={handleShow}><Icon.EyeFill/></Button>
+                            <Button className='d-flex align-items-center' variant="secondary" onClick={() => handleDownload(images[0])}><Icon.Download/></Button>
+                        </ButtonGroup>
+                    </div>
                 </Card>
             </Col>
 
@@ -48,13 +50,20 @@ const Certificate = props => {
                     <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img variant="top"
-                        alt='note-img'
-                        src={image} 
-                        width='100%'
-                        height='100%'
-                        style={{objectFit: 'contain'}} 
-                    />
+                    {
+                        images.map((item, key) => {
+                            return (
+                                <img variant="top"
+                                    alt='note-img'
+                                    src={item} 
+                                    width='100%'
+                                    height='100%'
+                                    style={{objectFit: 'contain'}} 
+                                    key={key}
+                                />
+                            );
+                        })
+                    }
                 </Modal.Body>
             </Modal>
         </>
@@ -62,3 +71,4 @@ const Certificate = props => {
 }
 
 export default Certificate;
+

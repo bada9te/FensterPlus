@@ -1,25 +1,13 @@
-import { useEffect, useState } from 'react';
 import { Carousel } from 'react-bootstrap';
-import axios from 'axios';
+import slides from '../../data/slider';
 
 
 
 const Slider = props => {
-    const [sliderData, setSliderData] = useState([]);
-    const getData = async() => {
-        const result = await axios.get('/get/slider');
-        setSliderData(result.data.data)
-    }
-
-    useEffect(() => {
-        getData();
-    });
-
-
     return (
         <Carousel className='shadow overflow-hidden'>
             {
-                sliderData.map((item, key) => {
+                slides.map((item, key) => {
                     return (
                         <Carousel.Item key={key}>
                             <img

@@ -24,10 +24,10 @@ const Kontakte = props => {
                 <Row>
                     <Col>
                         <Row className="p-3">
-                            <ContactPerson title="Leiter der Firma" name="Vitaly Britner" phone="+4901735655122" email="info@fensterplus.com"/>
+                            <ContactPerson title="Leiter der Firma" name="Witalii Britner" phone="+490 173 5655122" email="info@fensterplus.com"/>
                         </Row>
                         <Row className="p-3">
-                            <ContactPerson title="Stellvertretender Leiter" name="Alexey Krol" phone="+4915118473827" email="a.kroll@ukr.net"/>
+                            <ContactPerson title="Verkaufsleiter" name="Alex Krol" phone="+49 151 18473827" email="a.kroll@ukr.net"/>
                         </Row>
                     </Col>
 

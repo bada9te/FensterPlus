@@ -1,28 +1,15 @@
 import DetailsNote from "../details-note/details-note";
-import axios from 'axios';
-import { useEffect, useState } from "react";
-
+import notes from "../../data/notes";
 
 
 const DetailsNoteContainer = props => {
     const { buttons } = props;
-    const [notesData, setNotesData] = useState([]);
-
-    const getData = async() => {
-        const result = await axios.get('/get/notes');
-        setNotesData(result.data.data);
-    }
-
-    useEffect(() => {
-        getData();
-    });
+    
 
     return (
         <>
             {
-                notesData.length !== 0
-                ?
-                notesData.map((item, key) => {
+                notes.map((item, key) => {
                     return (
                         <DetailsNote 
                             image={item.file}
@@ -33,8 +20,6 @@ const DetailsNoteContainer = props => {
                         />
                     );
                 })
-                :
-                null
             }
         </>
     );

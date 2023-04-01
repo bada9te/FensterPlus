@@ -11,7 +11,7 @@ const Partner = props => {
                 <div className='d-flex justify-content-center'>
                     <img variant="top"
                         className='rounded mt-3' 
-                        alt='note-img'
+                        alt='partner-img'
                         src={image} 
                         width='100%'
                         height='100%'
@@ -21,14 +21,16 @@ const Partner = props => {
                 <Card.Body>
                     <Card.Title className='text-center'>{title}</Card.Title>
                     <Card.Text className='text-center fst-italic'>{description}</Card.Text>
-                    <div className='d-flex justify-content-center'>
-                        <ButtonGroup aria-label="Basic example">
-                            { social?.instagram ? <Button className="d-flex align-items-center" variant="danger" href={social.instagram} target="_blank"><Icon.Instagram/></Button> : null }
-                            { social?.facebook ? <Button className="d-flex align-items-center" variant="primary" href={social.facebook} target="_blank"><Icon.Facebook/></Button> : null }
-                            { social?.twitter ? <Button className="d-flex align-items-center" variant="dark" href={social.twitter} target="_blank"><Icon.Twitter/></Button> : null }
-                        </ButtonGroup>
-                    </div>
                 </Card.Body>
+                <div className='d-flex justify-content-center pb-3'>
+                    <ButtonGroup aria-label="Basic example">
+                        { social?.instagram ? <Button className="d-flex align-items-center" variant="danger" href={social.instagram} target="_blank"><Icon.Instagram/></Button> : null }
+                        { social?.facebook ? <Button className="d-flex align-items-center" variant="primary" href={social.facebook} target="_blank"><Icon.Facebook/></Button> : null }
+                        { social?.twitter ? <Button className="d-flex align-items-center" variant="dark" href={social.twitter} target="_blank"><Icon.Twitter/></Button> : null }    
+                        { social?.web.indexOf("salamander") !== -1 ? <Button className="d-flex align-items-center" variant="success" href={social.web} target="_blank">Site</Button> : null }
+                        { social?.web.indexOf("inotherm") !== -1 ? <Button className="d-flex align-items-center" variant="dark" href={social.web} target="_blank">Site</Button> : null }
+                    </ButtonGroup>
+                </div>
             </Card>
         </Col>
     );

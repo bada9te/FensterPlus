@@ -20,21 +20,24 @@ const Producte = props => {
             
             <Container className='pt-5'>
                 <Tabs
-                    defaultActiveKey="all"
+                    defaultActiveKey="alle"
                     id="uncontrolled-tab-example"
                     className="mb-3"
                 >
-                    <Tab eventKey="all" title="All">
-                        <CategoryTab category="all"/>
+                    <Tab eventKey="alle" title="Alle">
+                        <CategoryTab category="alle"/>
                     </Tab>
-                    <Tab eventKey="first" title="First">
-                        <CategoryTab category="first"/>
+                    <Tab eventKey="fenster" title="Fenster">
+                        <CategoryTab category="fenster"/>
                     </Tab>
-                    <Tab eventKey="second" title="Second">
-                        <CategoryTab category="second"/>
+                    <Tab eventKey="fensterläden" title="Fensterläden">
+                        <CategoryTab category="fensterläden"/>
                     </Tab>
-                    <Tab eventKey="third" title="Third">
-                        <CategoryTab category="third"/>
+                    <Tab eventKey="türen" title="Türen">
+                        <CategoryTab category="türen"/>
+                    </Tab>
+                    <Tab eventKey="jalousien" title="Jalousien">
+                        <CategoryTab category="jalousien"/>
                     </Tab>
                 </Tabs>
             </Container>

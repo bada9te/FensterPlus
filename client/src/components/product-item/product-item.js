@@ -24,7 +24,7 @@ const ProductItem = props => {
                     <div className='d-flex justify-content-center'>
                         <img variant="top"
                             className='rounded mt-3' 
-                            alt='note-img'
+                            alt='product-img'
                             src={preview} 
                             width='100%'
                             height='100%'
@@ -50,7 +50,7 @@ const ProductItem = props => {
                 </Modal.Header>
                 <Modal.Body>
                     <img variant="top"
-                        alt='note-img'
+                        alt='product-img'
                         src={details} 
                         width='100%'
                         height='100%'

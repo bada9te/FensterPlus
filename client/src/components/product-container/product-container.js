@@ -1,26 +1,12 @@
 import ProductItem from "../product-item/product-item";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import products from "../../data/products";
 
 
 const ProductContainer = props => {
-    const [productsData, setProductsData] = useState([]);
-
-    const getData = async() => {
-        const result = await axios.get('/get/products');
-        setProductsData(result.data.data);
-    }
-
-    useEffect(() => {
-        getData();
-    });
-
     return (
         <>
             {
-                productsData.length !== 0
-                ?
-                productsData.map((item, key) => {
+                products.map((item, key) => {
                     return (
                         <ProductItem 
                             preview={item.preview}
@@ -31,8 +17,6 @@ const ProductContainer = props => {
                         />
                     );
                 })
-                :
-                null
             }
         </>
     );
