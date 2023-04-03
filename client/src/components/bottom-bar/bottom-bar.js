@@ -1,9 +1,17 @@
-import { Container, Card, Row, Col } from 'react-bootstrap';
+import { useRef, useState } from 'react';
+import { Container, Card, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import LogoWhite from '../../images/LogoWhite.png';
 
 
 const BottomBar = props => {
+    const [copied, setCopied] = useState(false);
+
+    const handleCopy = (e) => {
+        navigator.clipboard.writeText(e.target.innerHTML);
+        setCopied(true);
+    }
+    
 
     return (
         <Card className="w-100 rounded-0" style={{ backgroundColor: 'rgb(46,49,146)', color: 'white' }}>
@@ -15,9 +23,21 @@ const BottomBar = props => {
                                 <h5 className="fw-bold">KORRESPONDENZADRESSE</h5>
                             </Row>
                             <Row>
-                                <p className='fw-normal'><Icon.GeoAltFill /> Europasrt.27 72510, Stetten a.k.M</p>
-                                <p className='fw-normal'><Icon.PhoneFill /> +49 017 35655122</p>
-                                <p className='fw-normal'><Icon.EnvelopeFill /> info@fensterplus.com</p>
+                                <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy address"}</Tooltip>}>
+                                    <p className='fw-normal'>
+                                        <Icon.GeoAltFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>Europasrt.27 72510, Stetten a.k.M</span>
+                                    </p>
+                                </OverlayTrigger>
+                                <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy phone"}</Tooltip>}>
+                                    <p className='fw-normal'>
+                                        <Icon.PhoneFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>+49 017 35655122</span>
+                                    </p>
+                                </OverlayTrigger>
+                                <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy email"}</Tooltip>}>
+                                    <p className='fw-normal'>
+                                        <Icon.EnvelopeFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>info@fensterplus.com</span>
+                                    </p>
+                                </OverlayTrigger>
                             </Row>
                         </Col>
                         <Col className='p-4'>
@@ -25,9 +45,21 @@ const BottomBar = props => {
                                 <h5 className="fw-bold">AUSSTELLUNGSRAUM</h5>
                             </Row>
                             <Row>
-                                <p className='fw-normal'><Icon.GeoAltFill /> Lagerstraße.15 72510, Stetten a.k.M</p>
-                                <p className='fw-normal'><Icon.PhoneFill /> +49 151 18473827</p>
-                                <p className='fw-normal'><Icon.EnvelopeFill /> info@fensterplus.com</p>
+                                <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy address"}</Tooltip>}>
+                                    <p className='fw-normal'>
+                                        <Icon.GeoAltFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>Lagerstraße.15 72510, Stetten a.k.M</span>
+                                    </p>
+                                </OverlayTrigger>
+                                <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy phone"}</Tooltip>}>
+                                    <p className='fw-normal'>
+                                        <Icon.PhoneFill /><span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>+49 151 18473827</span>
+                                    </p>
+                                </OverlayTrigger>
+                                <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy email"}</Tooltip>}>
+                                    <p className='fw-normal'>
+                                        <Icon.EnvelopeFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>info@fensterplus.com</span>
+                                    </p>
+                                </OverlayTrigger>
                             </Row>
                         </Col>
 

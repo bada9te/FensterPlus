@@ -1,17 +1,17 @@
-import Product1Preview from '../../src/images/products/salamander73.jpg';
-import Product1Details from '../../src/images/products/schema73.jpg';
+import Product1Preview from '../images/products/salamander73.jpg';
+import Product1Details from '../images/products/schema73.jpg';
 
-import Product2Preview from '../../src/images/products/salamander82.jpg';
-import Product2Details from '../../src/images/products/schema82.jpg';
+import Product2Preview from '../images/products/salamander82.jpg';
+import Product2Details from '../images/products/schema82.jpg';
 
-import Product3Preview from '../../src/images/products/salamander-green.jpg';
-import Product3Details from '../../src/images/products/schema-green.jpg';
+import Product3Preview from '../images/products/salamander-green.jpg';
+import Product3Details from '../images/products/schema-green.jpg';
 
-import Product4Preview from '../../src/images/products/streamline-green.jpg';
-import Product4Details from '../../src/images/products/schema-streamline.jpg';
+import Product4Preview from '../images/products/streamline-green.jpg';
+import Product4Details from '../images/products/schema-streamline.jpg';
 
-import Product5Preview from '../../src/images/products/windows_hst.jpg';
-import Product5Details from '../../src/images/products/schema_hst.jpg';
+import Product5Preview from '../images/products/windows_hst.jpg';
+import Product5Details from '../images/products/schema_hst.jpg';
 
 
 const products = [

@@ -8,7 +8,7 @@ const partners = [
         description: "Die Salamander Industrie-Produkte GmbH, das mehrheitlich in Familienbesitz befindliche Unternehmen mit seinem Stammsitz in Türkheim im Unterallgäu, gehört zu den führenden europäischen Systemgebern für hochenergiesparende Fenster- und Türsysteme aus Kunststoff.",
         file: SalamanderLogo,
         social: {
-            web: "https://www.salamander-windows.com/en"
+            web: "https://www.salamander-windows.com/en",
         }
     },
     {

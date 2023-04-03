@@ -13,10 +13,10 @@ const Kunden = props => {
 
                 <hr/>
 
-                <Row className='pt-5'>
+                <Row className='py-5'>
                     <h5 className="fw-bold">UNSERE PARTNER</h5>
                     <p>
-                        TEXTTXT
+                        Unsere Partner sind zwei zu Recht bekannte und zuverlässige Unternehmen. Die deutsche Firma Salamander produziert Fenster von höchster Qualität, die auf dem europäischen Markt Anerkennung gefunden haben und sich leicht mit jedem Interieur kombinieren lassen. Das slowenische Unternehmen Inotherm mit mehr als 25 Jahren Erfahrung ist auf die Herstellung zuverlässiger Türen mit verschiedenen Designlösungen für den anspruchsvollsten Geschmack spezialisiert.
                     </p>
                 </Row>
                 <Row>

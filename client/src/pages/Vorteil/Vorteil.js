@@ -1,7 +1,6 @@
 import { Container, Row } from 'react-bootstrap';
 import BottomBar from '../../components/bottom-bar/bottom-bar';
 import DetailsNoteContainer from '../../components/details-note-container/details-note-container';
-import notes from "../../data/notes";
 
 
 const Vorteil = props => {
@@ -24,7 +23,7 @@ const Vorteil = props => {
                 </Row>
 
                 <Row className='p-5'>
-                    <h3 className="text-center">{notes.length} HIER SIND UNSERE STÄRKEN:</h3>
+                    <h3 className="text-center">HIER SIND UNSERE STÄRKEN:</h3>
                 </Row>
                 <Row className='pb-5'>
                     <DetailsNoteContainer/>
