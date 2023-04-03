@@ -2,7 +2,6 @@ import { Card, Button, Col, ButtonGroup, Modal } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import { saveAs } from 'file-saver';
 import { useState } from 'react';
-import ReactImageMagnify from 'react-image-magnify';
 
 
 const ProductItem = props => {

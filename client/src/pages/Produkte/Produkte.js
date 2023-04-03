@@ -47,13 +47,28 @@ const Producte = props => {
                     <h2>Zertifikate</h2>
                 </Row>
 
+                <Row className='pt-4'>
+                    <h4>Türen</h4>
+                </Row>
                 <Row>
-                    <Container className='py-4'>
+                    <Container className='pb-4'>
                         <Row>
-                            <CertificatesContainer/>
+                            <CertificatesContainer what="türen"/>
                         </Row>
                     </Container>
                 </Row>
+
+                <Row className='pt-4'>
+                    <h4>Fenster</h4>
+                </Row>
+                <Row>
+                    <Container className='pb-4'>
+                        <Row>
+                            <CertificatesContainer what="fenster"/>
+                        </Row>
+                    </Container>
+                </Row>
+
             </Container>
             
             <BottomBar/>

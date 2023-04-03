@@ -15,7 +15,7 @@ const TopBar = props => {
             <img
               alt=""
               src={Logo}
-              width="270"
+              width="240"
               height="90"
               className="d-inline-block align-top"
             />

@@ -17,34 +17,42 @@ const certificates = [
     {
         title: 'abc1',
         file: [Cert1],
+        what: 'türen',
     },
     {
         title: 'abc2',
         file: [Cert2],
+        what: 'türen',
     },
     {
         title: 'abc3',
         file: [Cert3],
+        what: 'türen',
     },
     {
         title: 'abc4',
         file: [Cert4, Cert4_1],
+        what: 'fenster',
     },
     {
         title: 'abc5',
         file: [Cert5],
+        what: 'fenster',
     },
     {
         title: 'abc6',
         file: [Cert6],
+        what: 'fenster',
     },
     {
         title: 'abc7',
         file: [Cert7, Cert7_1],
+        what: 'fenster',
     },
     {
         title: 'abc8',
         file: [Cert8],
+        what: 'fenster',
     },
 ];
 
