@@ -27,14 +27,14 @@ const Producte = props => {
                     <Tab eventKey="alle" title="Alle">
                         <CategoryTab category="alle"/>
                     </Tab>
+                    <Tab eventKey="türen" title="Türen">
+                        <CategoryTab category="türen"/>
+                    </Tab>
                     <Tab eventKey="fenster" title="Fenster">
                         <CategoryTab category="fenster"/>
                     </Tab>
-                    <Tab eventKey="fensterläden" title="Fensterläden">
+                    <Tab eventKey="fensterläden" title="Fensterrollläden">
                         <CategoryTab category="fensterläden"/>
-                    </Tab>
-                    <Tab eventKey="türen" title="Türen">
-                        <CategoryTab category="türen"/>
                     </Tab>
                     <Tab eventKey="jalousien" title="Jalousien">
                         <CategoryTab category="jalousien"/>
@@ -65,6 +65,17 @@ const Producte = props => {
                     <Container className='pb-4'>
                         <Row>
                             <CertificatesContainer what="fenster"/>
+                        </Row>
+                    </Container>
+                </Row>
+
+                <Row className='pt-4'>
+                    <h4>Fensterrollläden</h4>
+                </Row>
+                <Row>
+                    <Container className='pb-4'>
+                        <Row>
+                            <CertificatesContainer what="fensterläden"/>
                         </Row>
                     </Container>
                 </Row>

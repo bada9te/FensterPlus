@@ -9,7 +9,7 @@ const Slider = props => {
             {
                 slides.map((item, key) => {
                     return (
-                        <Carousel.Item key={key}>
+                        <Carousel.Item key={key} interval={1750}> 
                             <img
                                 className="d-block w-100"
                                 src={item.file}

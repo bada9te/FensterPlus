@@ -29,6 +29,7 @@ const Partner = props => {
                         { social?.twitter ? <Button className="d-flex align-items-center" variant="dark" href={social.twitter} target="_blank"><Icon.Twitter/></Button> : null }    
                         { social?.web.indexOf("salamander") !== -1 ? <Button className="d-flex align-items-center" variant="success" href={social.web} target="_blank">Site</Button> : null }
                         { social?.web.indexOf("inotherm") !== -1 ? <Button className="d-flex align-items-center" variant="dark" href={social.web} target="_blank">Site</Button> : null }
+                        { social?.web.indexOf("isotra") !== -1 ? <Button className="d-flex align-items-center" variant="danger" href={social.web} target="_blank">Site</Button> : null }
                     </ButtonGroup>
                 </div>
             </Card>

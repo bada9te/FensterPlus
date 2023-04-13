@@ -44,7 +44,7 @@ const Kontakte = props => {
                             <Card className="p-0">
                                 <Card.Header as="h5">DIE ADRESSE</Card.Header>
                                 <Card.Body>
-                                    <Card.Text>Europasrt.27 72510 Stetten a.k.M</Card.Text>
+                                    <Card.Text>Lagerstraße.15 72510, Stetten a.k.M</Card.Text>
                                     <Card.Text>Telefon: +4901735655122</Card.Text>
                                 </Card.Body>
                             </Card>

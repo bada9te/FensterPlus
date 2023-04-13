@@ -1,22 +1,24 @@
-import { Card, Button, Col, ButtonGroup, Modal } from 'react-bootstrap';
+import { Card, Button, Col, Row, ButtonGroup, Modal, Container } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import { saveAs } from 'file-saver';
 import { useState } from 'react';
 
 
 const ProductItem = props => {
-    const { title, description, preview, details } = props;
+    const { title, description, preview, details, additionalLink } = props;
 
     const [show, setShow] = useState(false);
+
 
     function handleShow() {
         setShow(true);
     }
 
-    const handleDownload = (img) => {
-        saveAs(img, `${title}.jpg`)
+    const handleDownload = (images) => {
+        images.map(item => {
+            return saveAs(item,`${item}.jpg`)
+        });
     }
-
     
     return (
         <>
@@ -34,7 +36,6 @@ const ProductItem = props => {
                     </div>
                     <Card.Body>
                         <Card.Title className='text-center'>{title}</Card.Title>
-                        <Card.Text className='text-center'>{description}</Card.Text>
                     </Card.Body>
                     <div className='d-flex justify-content-center mb-3'>
                         <ButtonGroup aria-label="Basic example">
@@ -50,15 +51,57 @@ const ProductItem = props => {
                 <Modal.Title>{title}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <img variant="top"
-                        alt='product-img'
-                        src={details} 
-                        width='100%'
-                        height='100%'
-                        
-                    />
+                    <Container>
+                        <Row>
+                            {
+                                details.map((item, key) => {
+                                    return (
+                                        <div key={key}>
+                                            {
+                                                key === 0
+                                                ?
+                                                <Row>
+                                                    <Col className='d-flex align-items-center justify-content-center p-5'>
+                                                        <Card.Body>
+                                                            <Card.Text className='text-center fs-4'>
+                                                                {description}
+                                                                {' '}
+                                                                <a href={additionalLink} target="_blank" rel="noopener noreferrer">{additionalLink}</a>
+                                                            </Card.Text>
+                                                        </Card.Body>
+                                                    </Col>
+                                                    
+                                                    <Col className='d-flex align-items-center justify-content-center'>
+                                                        <img variant="top"
+                                                            alt='product-img'
+                                                            src={item} 
+                                                            width='100%'
+                                                            height='100%'
+                                                            style={{objectFit: 'contain', minWidth: '385px'}} 
+                                                            key={key}
+                                                        />
+                                                    </Col>
+                                                </Row>
+                                                :
+                                                <Col className='d-flex align-items-center justify-content-center'>
+                                                    <img variant="top"
+                                                        alt='product-img'
+                                                        src={item} 
+                                                        width='100%'
+                                                        height='100%'
+                                                        style={{objectFit: 'contain', minWidth: '385px', maxWidth: '550px'}} 
+                                                        key={key}
+                                                    />
+                                                </Col>
+                                            }
+                                        </div>
+                                    );
+                                })
+                            }
+                        </Row>
+                    </Container>
                 </Modal.Body>
-            </Modal>   
+            </Modal>
         </>
     );
 }

@@ -6,53 +6,59 @@ import Cert3 from '../images/certificates/door3.png';
 // windows
 import Cert4 from '../images/certificates/window1.0.png';
 import Cert4_1 from '../images/certificates/window1.1.png';
-import Cert5 from '../images/certificates/window2.png';
 import Cert6 from '../images/certificates/window3.png';
 import Cert7 from '../images/certificates/window4.0.png';
 import Cert7_1 from '../images/certificates/window4.1.png';
 import Cert8 from '../images/certificates/window5.png';
-
+import Cert9 from '../images/certificates/rola1.jpg';
+import Cert10 from '../images/certificates/rola2.jpg';
 
 const certificates = [
     {
-        title: 'abc1',
+        title: '',
         file: [Cert1],
         what: 'türen',
     },
     {
-        title: 'abc2',
+        title: '',
         file: [Cert2],
         what: 'türen',
     },
     {
-        title: 'abc3',
+        title: '',
         file: [Cert3],
         what: 'türen',
     },
     {
-        title: 'abc4',
+        title: '',
         file: [Cert4, Cert4_1],
         what: 'fenster',
     },
+    
     {
-        title: 'abc5',
-        file: [Cert5],
-        what: 'fenster',
-    },
-    {
-        title: 'abc6',
+        title: '',
         file: [Cert6],
         what: 'fenster',
     },
     {
-        title: 'abc7',
+        title: '',
         file: [Cert7, Cert7_1],
         what: 'fenster',
     },
     {
-        title: 'abc8',
+        title: '',
         file: [Cert8],
         what: 'fenster',
+    },
+    {
+        title: '',
+        file: [Cert9],
+        what: 'fensterläden',
+    },
+    {
+        title: '',
+        file: [Cert10],
+        what: 'fensterläden',
     },
 ];
 

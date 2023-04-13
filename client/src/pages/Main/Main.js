@@ -9,9 +9,12 @@ import ProductContainer from '../../components/product-container/product-contain
 const Main = props => {
     return (
         <>
-            <Slider/>
-            
-            <Container className='py-5'>
+            <Container className='pb-5'>
+                <Row className="d-flex justify-content-center pb-5">
+                    <div style={{width: '910px'}}>
+                        <Slider/>
+                    </div>
+                </Row>
                 <Row>
                     <h2 className="text-center">Firma FensterPlus - 10 Jahre Erfahrung</h2>
                 </Row>

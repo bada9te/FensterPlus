@@ -13,6 +13,7 @@ const ProductContainer = props => {
                             details={item.details}
                             title={item.title}
                             description={item.description}
+                            additionalLink={item.additionalLink}
                             key={key}
                         />
                     );

@@ -1,55 +1,131 @@
+/* eslint-disable import/first */
 import Product1Preview from '../images/products/salamander73.jpg';
-import Product1Details from '../images/products/schema73.jpg';
+import Product1Details from '../images/products/76 green.png';
+import Product1_1Details from '../images/products/76-1.jpg';
+import Product1_2Details from '../images/products/76-2.jpg';
+import Product1_3Details from '../images/products/76-3.jpg';
+const Product1 = {
+    title: "FENSTER SALAMANDER GREENEVOLUTION 76 AD",
+    description: "Beständig gegen verschiedene äußere Einflüsse und leicht zu reinigende Fensteroberflächen aus Salamander-Kunststoffen setzen neue Standards im Bereich Langlebigkeit und Pflege der Holzoberflächen.All dies für Sicherung der maximalen Wohnkomfort.Das System blueEvolution ist der weitere Entwicklungsschritt im Fensterbau. Ein langlebiges Kunststoff Fenster,welches zur Fassade und zum Innenraum des Raums passt.Dank der vielfältigen Verkleidungsarten der Rahmen-und Flügeloberflächen sowie die Verwendung der neuesten realMaterial-Serie ist es möglich, Fenster- und Türkonstruktionen jedem Baustil anzupassen–von klassisch bis modern.Mehr Information unter dem Link:",
+    additionalLink: "https://allwindows.eu/de/salamander-ge-76-md/",
+    preview: Product1Preview,
+    details: [Product1Details,Product1_1Details,Product1_2Details,Product1_3Details],
+    category: "fenster",
+};
 
 import Product2Preview from '../images/products/salamander82.jpg';
-import Product2Details from '../images/products/schema82.jpg';
+import Product2Details from '../images/products/82/82_1.jpg';
+import Product2_1Details from '../images/products/82/82_2.jpg';
+import Product2_2Details from '../images/products/82/82_3.jpg';
+import Product2_3Details from '../images/products/82/82_4.jpg';
+const Product2 = {
+    title: "FENSTER SALAMANDER BLUEEVOLUTION 82 MD",
+    description: "Mehr Information unter dem Link:",
+    preview: Product2Preview,
+    details: [Product2Details,Product2_1Details,Product2_2Details,Product2_3Details],
+    additionalLink:"https://www.salamander-windows.com/en/windows/system-bluevolution/bluevolution-82",
+    category: "fenster",
+};
 
 import Product3Preview from '../images/products/salamander-green.jpg';
-import Product3Details from '../images/products/schema-green.jpg';
+import Product3_1_1Details from '../images/products/92/1.1.jpg';
+import Product3_1_2Details from '../images/products/92/1.2.jpg';
+import Product3_2_1Details from '../images/products/92/2.1.jpg';
+import Product3_2_2Details from '../images/products/92/2.2.jpg';
+import Product3_2_3Details from '../images/products/92/2.3.jpg';
+import Product3_2_4Details from '../images/products/92/2.4.jpg';
+import Product3_2_5Details from '../images/products/92/2.5.jpg';
+import Product3_2_6Details from '../images/products/92/2.6.jpg';
+import Product3_2_7Details from '../images/products/92/2.7.jpg';
+import Product3_2_8Details from '../images/products/92/2.8.jpg';
+import Product3_2_9Details from '../images/products/92/2.9.jpg';
+import Product3_2_10Details from '../images/products/92/2.10.jpg';
+const Product3 = {
+    title: "FENSTER SALAMANDER BLUEEVOLUTION 92 MD",
+    description: "Weitere Informationen unter dem Link:",
+    preview: Product3Preview,
+    details: [
+        Product3_1_1Details,Product3_1_2Details,
+        Product3_2_1Details,Product3_2_2Details,Product3_2_3Details,
+        Product3_2_4Details,Product3_2_5Details,Product3_2_6Details,
+        Product3_2_7Details,Product3_2_8Details,Product3_2_9Details,
+        Product3_2_10Details
+    ],
+    additionalLink:"https://www.salamander-windows.com/en/windows/system-bluevolution/bluevolution-92",
+    category: "fenster",
+};
 
-import Product4Preview from '../images/products/streamline-green.jpg';
-import Product4Details from '../images/products/schema-streamline.jpg';
+import Product4Preview from '../images/products/76_md.jpg';
+import Product4Details from '../images/products/STREAMLINE1.jpg';
+const Product4 ={
+    title: "FENSTER SALAMANDER GREENEVOLUTION 76 MD",
+    description: "Streamline AD ist die perfekte Wahl für alle, die Ihren vier Wänden ein optisches Highlight verleihen möchten. Denn zahlreiche zur Auswahl stehende Profilgeometrien verwandeln Ihr Zuhause in ein stilvolles Wohnambiente. Das Beste daran: Streamline AD sorgt zudem für mehr Behaglichkeit und deutlich reduzierten Energieverbrauch. Mehr Information unter dem Link:",
+    preview: Product4Preview,
+    details: [Product4Details],
+    additionalLink:"https://www.salamander-windows.com",
+    category: "fenster",
+};
 
 import Product5Preview from '../images/products/windows_hst.jpg';
-import Product5Details from '../images/products/schema_hst.jpg';
+import Product5Details from '../images/products/Hebentüre.jpg';
+import Product5_1Details from '../images/products/hebentüre2.jpg';
+const Product5 ={
+    title: "FENSTER SALAMANDER HEBESCHIEBETÜR (HST)",
+    description: "Mehr Information unter dem Link:",
+    preview: Product5Preview,
+    details: [Product5Details,Product5_1Details],
+    additionalLink:"https://www.salamander-windows.com/schiebesysteme/system-evolutiondrive/evolutiondrive-hst",
+    category: "fenster",
+};
 
+import Product6Preview from '../images/doors/CORNER DOOR.jpg';
+import Product6Details from '../images/doors/DVER.jpg';
+import Product6_1Details from '../images/doors/dver2.jpg';
+import Product6_2Details from '../images/doors/dver3.jpg';
+import Product6_3Details from '../images/doors/dver4.jpg';
+const Product6 = {
+    title:"EXCLUSIVE INOTHERM TÜRE 95mm AUSSCHNITT",
+    description:"Türen mit einem Ausschnitt von 95 mm.Wir sind auf die Herstellung von Eingangstüren spezialisiert und verfügen über mehr als 25 Jahre Erfahrung. Unsere Aluminium-Haustüren sind von höchster Qualität.Über den folgenden Link können Sie die Tür über den Konfigurator konfigurieren und sie wird uns zugesandt:",
+    preview: Product6Preview,
+    details: [Product6Details,Product6_1Details,Product6_2Details,Product6_3Details],
+    additionalLink:"https://doordesigner.inotherm-tuer.de/configurator/?partnerCode=36866",
+    category:"türen"
+  };
 
+import Product17Preview from '../images/products/rolls/proba.jpg';
+import Product17Details from '../images/products/rolls/SCREEN ZIP ECONOMY char.jpg';
+import Product17_1Details from '../images/products/rolls/Vivera-ref-1.jpg';
+import Product17_2Details from '../images/products/rolls/Vivera-ref-3.jpg';
+const Product17 = {
+    title: "ISOTRA FENSTERLÄDEN VIVERA",
+    description: "Das Top-Rolade-modell der Firma Isotra.Vivera ist ein beliebter Standard-Rollotyp für den Außenbereich. Der große Vorteil dieses Außenrollos liegt in der hohen Beschattung, der Möglichkeit, Außengeräusche zu dämpfen und in der hohen Thermoregulierungswirkung. Eine praktische Ergänzung zu einem Außenrollo ist das separat steuerbare Insektenschutzrollo die Rollosteuerung (Vivera-Sectra)..Eine größere Auswahl finden Sie unter dem Link:h",
+    preview: Product17Preview,
+    details: [Product17Details,Product17_1Details,Product17_2Details],
+    additionalLink:"https://www.isotra-jalousien.de/vorfensterrollos",
+    category: "fensterläden"
+};
+
+import Product33Preview from '../images/products/Jaluie/Zetta-90.png';
+import Product33Details from '../images/products/Jaluie/zetta 90/Zetta90.jpg';
+import Product33_1Details from '../images/products/Zetta-90-1.jpg';
+import Product33_2Details from '../images/products/Zetta-90-2.jpg';
+const Product33 = {
+    title: "ISOTRA JALOUSIEN ZETTA 90",
+    description: "Das Hauptmodell der Jalousien von Isotra.Die Außenbeschattung Zetta 90 ist die technologisch vorteilhafteste Außenjalousie im Bereich der Außenbeschattungstechnik, die für die Beschattung von Einfamilienhäusern und Verwaltungsgebäuden empfohlen wird. Die Variabilität der Montage, das moderne technische Design und die perfekte Beschattung machen diese horizontale Außenjalousie zu einem einzigartigen Beschattungselement für alle Arten von Objekten.Eine größere Auswahl finden Sie unter dem Link:",
+    preview: Product33Preview,
+    details: [Product33Details,Product33_1Details,Product33_2Details],
+    additionalLink:"https://www.isotra-jalousien.de/aussenjalousie",
+    category: "jalousien"
+};
 const products = [
-    {
-        title: "FENSTER AUS PROFIL SALAMANDER BLUEEVOLUTION 73",
-        description: "Das Profilsystem Salamander BLUEVOLUTION 73 wird in Europa unter garantierter Einhaltung sämtlicher Normen und Qualitätsstandards hergestellt. GLASSO Fenster und Türen aus dem neuen Profilsystem sind dank der sorgfältig versiegelten Oberflächen nicht nur besonders leicht zu pflegen, sondern ermöglichen auch eine extrem lange Lebensdauer. Das Profilsystem verhindert die Bildung von Wärmebrücken und trägt hierdurch zu einer deutlichen Reduzierung des Energieverbrauchs bei.",
-        preview: Product1Preview,
-        details: Product1Details,
-        category: "fenster",
-    },
-    {
-        title: "FENSTER AUS PROFIL SALAMANDER BLUEEVOLUTION 82",
-        description: "GLASSO Fenster und Türen aus dem neuen Profilsystem SALAMANDER BLUEVOLUTION 82 bieten bisher unerreichte Energieeffizienz! Die dritte Dichtungebene verbessert die akustischen und thermischen Eigenschaften deutlich, bietet zuverlässigen Schutz vor Zugluft und verbessert den Schallschutz. GLASSO Fenster und Türen mit dem neuen Profil BLUEVOLUTION 82 sorgen für besondere Gemütlichkeit und Komfort in Ihrem Heim!",
-        preview: Product2Preview,
-        details: Product2Details,
-        category: "fenster",
-    },
-    {
-        title: "FENSTER GLASSO AUS PROFIL SALAMANDER BLUEEVOLUTION",
-        description: "Außergewöhnliches deutsches Fenster. Referenzqualität, Zuverlässigkeit und Design. Ein modernes, technologisches, monumentales Fenster, dessen Anwendungsbereich begrenzt ist. Ein Palast oder eine Villa, ein Penthouse oder Apartments - ein solches Fenster wird über viele Jahre hinweg jeden Tag Freude an seiner Qualität und einwandfreien Zuverlässigkeit bereiten. Sechs Luftkammern mit optimaler Breite, einer unglaublichen Einbautiefe von 92 mm, der Dickte der Außenwände 3mm und drei Dichtungskreisläufen.",
-        preview: Product3Preview,
-        details: Product3Details,
-        category: "fenster",
-    },
-    {
-        title: "FENSTER GLASSO AUS PROFIL SALAMANDER STREAMLINE",
-        description: "Echtes deutsches Fenster. Eine der besten Optionen für ein Metall-Kunststoff-Fenster auf dem ukrainischen Markt. Wenn Sie ein solches Fenster in Ihrem Privathaus oder Ihrer Wohnung installieren, können Sie sich auf die Qualität bis ins kleinste Detail verlassen! Die Salamander Streamline-Serie ist das Ergebnis langjähriger Entwicklungen auf dem Gebiet der Schaffung eines energieeffizienten Profilsystems. Durch den Einsatz neuer Technologien konnten wir ein Produkt entwickeln, das sein makelloses Erscheinungsbild während der gesamten Betriebsdauer bewahrt.",
-        preview: Product4Preview,
-        details: Product4Details,
-        category: "fenster",
-    },
-    {
-        title: "FENSTER GLASSO AUS PROFIL SALAMANDER HEBESCHIEBETÜR (HST)",
-        description: "Ästhetik und makelloses Erscheinungsbild, stilvolles und raffiniertes Design - keine hohen Schwellen und Stolpersteine mehr! Beeindruckende Dimensionen. Die Gesamtabmessungen weißer Strukturen sind in der Breite durch die Länge der Schubladenstange - 6,5 m und in der Höhe - durch eine Markierung von 2,5 m (5 mx 2,3 m - Laminierung) begrenzt. Flügelgröße Breite - 3,2 m, Höhe - 2,6 m (2,5 m x 2,2 m - Laminierung). Rahmentiefe: 194 mm, Flügel: 82 mm. Das maximale Gewicht des beweglichen Flügels beträgt 440 kg. Stabilität und Haltbarkeit, keine nennenswerten Beschwerden für 15 Jahre Verkauf in europäischen Ländern von Island nach Malta! Sicherheit. Wirklich hoch - die dritte Klasse der Einbruchresistenz macht Ihr Zuhause sicher und komfortabel.",
-        preview: Product5Preview,
-        details: Product5Details,
-        category: "fenster",
-    },
+    Product3,
+    Product2,
+    Product1,
+    Product4,
+    Product5,
+    Product6,
+    Product17,
+    Product33,
 ];
 
 

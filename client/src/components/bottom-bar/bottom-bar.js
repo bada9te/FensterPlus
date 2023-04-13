@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useState } from 'react';
 import { Container, Card, Row, Col, OverlayTrigger, Tooltip } from 'react-bootstrap';
 import * as Icon from 'react-bootstrap-icons';
 import LogoWhite from '../../images/LogoWhite.png';

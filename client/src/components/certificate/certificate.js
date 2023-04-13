@@ -13,9 +13,9 @@ const Certificate = props => {
         setShow(true);
     }
 
-    const handleDownload = (imges) => {
+    const handleDownload = (images) => {
         images.map(item => {
-            return saveAs(item, `${item}.jpg`)
+            return saveAs(item,`${item}.jpg`)
         });
     }
 
@@ -39,7 +39,7 @@ const Certificate = props => {
                     <div className='d-flex justify-content-center pb-3'>
                         <ButtonGroup aria-label="Basic example">
                             <Button className='d-flex align-items-center' variant="primary" onClick={handleShow}><Icon.EyeFill/></Button>
-                            <Button className='d-flex align-items-center' variant="secondary" onClick={() => handleDownload(images[0])}><Icon.Download/></Button>
+                            <Button className='d-flex align-items-center' variant="secondary" onClick={() => handleDownload(images)}><Icon.Download/></Button>
                         </ButtonGroup>
                     </div>
                 </Card>

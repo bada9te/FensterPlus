@@ -1,8 +1,8 @@
-import { Card, Button, Col } from 'react-bootstrap';
+import { Card, Col } from 'react-bootstrap';
 
 
 const DetailsNote = props => {
-    const { title, description, image, button } = props;
+    const { title, description, image } = props;
 
     return (
         <Col className='d-flex justify-content-center'>
@@ -20,9 +20,7 @@ const DetailsNote = props => {
                     <Card.Title className='text-center'>{title}</Card.Title>
                     <Card.Text className='text-center'>{description}</Card.Text>
                 </Card.Body>
-                <div className='d-flex justify-content-center pb-3'>
-                    { button ? <Button variant="primary" href='/vorteil'>Details</Button> : null }
-                </div>
+                
             </Card>
         </Col>
     );
