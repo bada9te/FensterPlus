@@ -6,7 +6,7 @@ import React from 'react';
 
 
 const TopBar = props => {
-    const instagramLink = "https://instagram.com/fenster_plus?igshid=YmMyMTA2M2Y=";
+    const instagramLink = "https://instagram.com";
 
     return (
         <Navbar bg="light" expand="lg" sticky="top">

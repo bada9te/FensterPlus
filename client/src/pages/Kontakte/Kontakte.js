@@ -24,10 +24,10 @@ const Kontakte = props => {
                 <Row>
                     <Col>
                         <Row className="p-3">
-                            <ContactPerson title="Leiter der Firma" name="Witalii Britner" phone="+490 173 5655122" email="info@fensterplus.com"/>
+                            <ContactPerson title="Leiter der Firma" name="xxxxxxxxxx" phone="+000 000 00000000" email="info@info.com"/>
                         </Row>
                         <Row className="p-3">
-                            <ContactPerson title="Verkaufsleiter" name="Alex Krol" phone="+49 151 18473827" email="a.kroll@ukr.net"/>
+                            <ContactPerson title="Verkaufsleiter" name="xxxxxxxxxx" phone="+000 000 00000000" email="info@info.com"/>
                         </Row>
                     </Col>
 
@@ -44,8 +44,8 @@ const Kontakte = props => {
                             <Card className="p-0">
                                 <Card.Header as="h5">DIE ADRESSE</Card.Header>
                                 <Card.Body>
-                                    <Card.Text>Lagerstraße.15 72510, Stetten a.k.M</Card.Text>
-                                    <Card.Text>Telefon: +4901735655122</Card.Text>
+                                    <Card.Text>xxxxxxxxxxxxxxxxx</Card.Text>
+                                    <Card.Text>Telefon: +00 000 000000000</Card.Text>
                                 </Card.Body>
                             </Card>
                         </Row>

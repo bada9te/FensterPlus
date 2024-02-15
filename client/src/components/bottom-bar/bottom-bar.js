@@ -25,17 +25,17 @@ const BottomBar = props => {
                             <Row>
                                 <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy address"}</Tooltip>}>
                                     <p className='fw-normal'>
-                                        <Icon.GeoAltFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>Europasrt.27 72510, Stetten a.k.M</span>
+                                        <Icon.GeoAltFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>Europasrt.00 00000, abc a.b.C</span>
                                     </p>
                                 </OverlayTrigger>
                                 <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy phone"}</Tooltip>}>
                                     <p className='fw-normal'>
-                                        <Icon.PhoneFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>+49 017 35655122</span>
+                                        <Icon.PhoneFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>+00 000 0000000</span>
                                     </p>
                                 </OverlayTrigger>
                                 <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy email"}</Tooltip>}>
                                     <p className='fw-normal'>
-                                        <Icon.EnvelopeFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>info@fensterplus.com</span>
+                                        <Icon.EnvelopeFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>info@info.com</span>
                                     </p>
                                 </OverlayTrigger>
                             </Row>
@@ -47,17 +47,17 @@ const BottomBar = props => {
                             <Row>
                                 <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy address"}</Tooltip>}>
                                     <p className='fw-normal'>
-                                        <Icon.GeoAltFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>Lagerstraße.15 72510, Stetten a.k.M</span>
+                                        <Icon.GeoAltFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>xxxxxxxxxxxxxxxxxx</span>
                                     </p>
                                 </OverlayTrigger>
                                 <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy phone"}</Tooltip>}>
                                     <p className='fw-normal'>
-                                        <Icon.PhoneFill /><span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>+49 151 18473827</span>
+                                        <Icon.PhoneFill /><span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>+00 000 0000000</span>
                                     </p>
                                 </OverlayTrigger>
                                 <OverlayTrigger placement="left" overlay={<Tooltip id={`tooltip-top`}>{copied ? "Copied" : "Click to copy email"}</Tooltip>}>
                                     <p className='fw-normal'>
-                                        <Icon.EnvelopeFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>info@fensterplus.com</span>
+                                        <Icon.EnvelopeFill /> <span onClick={(e) => handleCopy(e)} onMouseLeave={() => setCopied(false)}>info@info.com</span>
                                     </p>
                                 </OverlayTrigger>
                             </Row>
