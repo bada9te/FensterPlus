@@ -1,5 +1,5 @@
-import SalamanderLogo from '../../src/images/partners/Salamander.png'
-import InothermLogo from '../../src/images/partners/Inotherm.png'
+import SalamanderLogo from '../images/partners/Salamander.png'
+import InothermLogo from '../images/partners/Inotherm.png'
 import IzotraLogo from '../images/partners/isotra-logo.jpg'
 
 const partners = [
